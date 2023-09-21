@@ -1,4 +1,5 @@
 import 'package:aie/components/question.dart';
+import 'package:aie/screens/android_large_22.dart';
 import 'package:buttons_tabbar/buttons_tabbar.dart';
 import 'package:flutter/material.dart';
 
@@ -196,7 +197,7 @@ class _AndroidLargeFiveState extends State<AndroidLargeFive>
                         curve: Curves.ease,
                       );
                     } else {
-                      print("done");
+                      Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) => const AndroidLargeTwentyTwo()));
                     }
                   },
                   child: Text("Next")),
