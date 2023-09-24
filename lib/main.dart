@@ -87,7 +87,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 style: TextStyle(fontSize: 22, fontWeight: FontWeight.w700),
               ),
             ),
-            const ExamCardWidget(),
+            const ExamCardWidget(cardColor: const Color.fromRGBO(73, 112, 251, 1),textColor: Colors.white,iconColor: const Color.fromRGBO(73, 112, 251, 1)),
             Padding(
               padding: const EdgeInsets.only(
                 left: 30,
