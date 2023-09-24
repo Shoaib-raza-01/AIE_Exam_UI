@@ -1,15 +1,15 @@
 import 'package:aie/components/donut_chart.dart';
-import 'package:aie/screens/android_large_19.dart';
+import 'package:aie/screens/android_large_22.dart';
 import 'package:flutter/material.dart';
 
-class AndroidLargeTwentyTwo extends StatefulWidget {
-  const AndroidLargeTwentyTwo({super.key});
+class AndroidLargeSeven extends StatefulWidget {
+  const AndroidLargeSeven({super.key});
 
   @override
-  State<AndroidLargeTwentyTwo> createState() => _AndroidLargeTwentyTwoState();
+  State<AndroidLargeSeven> createState() => _AndroidLargeSevenState();
 }
 
-class _AndroidLargeTwentyTwoState extends State<AndroidLargeTwentyTwo> {
+class _AndroidLargeSevenState extends State<AndroidLargeSeven> {
   bool rotate = false;
   @override
   Widget build(BuildContext context) {
@@ -52,8 +52,9 @@ class _AndroidLargeTwentyTwoState extends State<AndroidLargeTwentyTwo> {
                       width: 80,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(40),
+                        color: const Color.fromRGBO(73, 112, 251, 1),
                       ),
-                      child: DonutChartComponent(result: 80, primaryColor: Color.fromARGB(255, 34, 156, 255),textColor: Colors.white,),
+                      child: DonutChartComponent(result: 80, primaryColor: const Color.fromARGB(255, 0, 140, 255), textColor: Colors.white,),
                       // child: const Stack(children: [
                       //   Image(image: AssetImage('assets/images/circular.png')),
                       //   Align(
@@ -158,7 +159,7 @@ class _AndroidLargeTwentyTwoState extends State<AndroidLargeTwentyTwo> {
                                   //     child: Text(
                                   //       '80%',
                                   //       style: TextStyle(
-                                  //           color: Colors.white,
+                                  //           color: Colors.black,
                                   //           fontSize: 24,
                                   //           fontWeight: FontWeight.bold),
                                   //     ),
@@ -205,7 +206,7 @@ class _AndroidLargeTwentyTwoState extends State<AndroidLargeTwentyTwo> {
                                   //     child: Text(
                                   //       '80%',
                                   //       style: TextStyle(
-                                  //           color: Colors.white,
+                                  //           color: Colors.black,
                                   //           fontSize: 24,
                                   //           fontWeight: FontWeight.bold),
                                   //     ),
@@ -240,30 +241,6 @@ class _AndroidLargeTwentyTwoState extends State<AndroidLargeTwentyTwo> {
               ),
               const SizedBox(
                 height: 30,
-              ),
-              Container(
-                height: 50,
-                width: MediaQuery.of(context).size.width,
-                decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(30),
-                    color: const Color.fromRGBO(255, 218, 133, 1),
-                    boxShadow: const [
-                    BoxShadow(
-                      offset: Offset(1,2), 
-                                   blurRadius: 3,
-                    )
-                  ]),
-                child: const Center(
-                    child: Text(
-                  'Check Ranking',
-                  style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 18,
-                      fontWeight: FontWeight.bold),
-                )),
-              ),
-              const SizedBox(
-                height: 35,
               ),
               Container(
                 decoration: BoxDecoration(
@@ -339,7 +316,7 @@ class _AndroidLargeTwentyTwoState extends State<AndroidLargeTwentyTwo> {
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(35),
                     color: const Color.fromRGBO(208, 177, 244, 1),
-                   boxShadow: const [
+                    boxShadow: const [
                     BoxShadow(
                       offset: Offset(1,2), 
                                    blurRadius: 3,
@@ -385,16 +362,17 @@ class _AndroidLargeTwentyTwoState extends State<AndroidLargeTwentyTwo> {
                           children: [
                             InkWell(
                                 onTap: () {
-                                  Navigator.of(context).push(MaterialPageRoute(
-                                      builder: (BuildContext context) =>
-                                          HomePage()));
+                                  Navigator.of(context).push(
+                                      MaterialPageRoute(
+                                        builder: (BuildContext context) =>
+                                            const AndroidLargeTwentyTwo(),
+                                      ));
                                 },
                                 child: Container(
                                     height: 30,
                                     decoration: BoxDecoration(
                                         borderRadius: BorderRadius.circular(15),
-                                        color: const Color.fromRGBO(
-                                            73, 112, 251, 1)),
+                                        color: const Color.fromRGBO(73, 112, 251, 1)),
                                     child: const Padding(
                                       padding: EdgeInsets.only(
                                           top: 5, left: 15, right: 15),
@@ -412,8 +390,7 @@ class _AndroidLargeTwentyTwoState extends State<AndroidLargeTwentyTwo> {
                                     height: 30,
                                     decoration: BoxDecoration(
                                         borderRadius: BorderRadius.circular(15),
-                                        color: const Color.fromRGBO(
-                                            73, 112, 251, 1)),
+                                        color: const Color.fromRGBO(73, 112, 251, 1)),
                                     child: const Padding(
                                       padding: EdgeInsets.only(
                                           top: 5, left: 15, right: 15),

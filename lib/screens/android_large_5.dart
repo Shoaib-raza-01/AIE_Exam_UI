@@ -1,5 +1,5 @@
 import 'package:aie/components/question.dart';
-import 'package:aie/screens/android_large_22.dart';
+import 'package:aie/screens/android_large_11.dart';
 import 'package:buttons_tabbar/buttons_tabbar.dart';
 import 'package:flutter/material.dart';
 
@@ -66,8 +66,8 @@ class _AndroidLargeFiveState extends State<AndroidLargeFive>
                           width: 80,
                           decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(24),
-                              color: Color.fromRGBO(73, 112, 251, 1)),
-                          child: Center(
+                              color: const Color.fromRGBO(73, 112, 251, 1)),
+                          child: const Center(
                             child: Text(
                               "Submit",
                               style: TextStyle(color: Colors.white),
@@ -89,8 +89,8 @@ class _AndroidLargeFiveState extends State<AndroidLargeFive>
                       height: 45,
                       radius: 30,
                       borderWidth: 0.2,
-                      decoration: BoxDecoration(
-                        color: const Color.fromRGBO(255, 189, 20, 1),
+                      decoration: const BoxDecoration(
+                        color: Color.fromRGBO(255, 189, 20, 1),
                       ),
                       contentPadding:
                           const EdgeInsets.only(left: 20, right: 20),
@@ -138,7 +138,7 @@ class _AndroidLargeFiveState extends State<AndroidLargeFive>
                   Flexible(
                       child: TabBarView(
                     controller: _tabController,
-                    children: [
+                    children: const [
                       QuestionCard(),
                       QuestionCard(),
                       QuestionCard(),
@@ -156,7 +156,9 @@ class _AndroidLargeFiveState extends State<AndroidLargeFive>
             ),
           ),
         ),
-        const SizedBox(height: 30,),
+        const SizedBox(
+          height: 30,
+        ),
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
@@ -173,14 +175,14 @@ class _AndroidLargeFiveState extends State<AndroidLargeFive>
                     if (selectedIndex != 0) {
                       _tabController.animateTo(
                         selectedIndex -= 1,
-                        duration: Duration(milliseconds: 300),
+                        duration: const Duration(milliseconds: 300),
                         curve: Curves.ease,
                       );
                     } else {
                       print('end');
                     }
                   },
-                  child: Center(child: Text("Previous"))),
+                  child: const Center(child: Text("Previous"))),
             ),
             SizedBox(
               height: 40,
@@ -193,14 +195,16 @@ class _AndroidLargeFiveState extends State<AndroidLargeFive>
                     if (selectedIndex != 9) {
                       _tabController.animateTo(
                         selectedIndex += 1,
-                        duration: Duration(milliseconds: 300),
+                        duration: const Duration(milliseconds: 300),
                         curve: Curves.ease,
                       );
                     } else {
-                      Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) => const AndroidLargeTwentyTwo()));
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (BuildContext context) =>
+                              const Androidlarge11()));
                     }
                   },
-                  child: Text("Next")),
+                  child: const Text("Next")),
             )
           ],
         )
