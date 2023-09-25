@@ -15,8 +15,6 @@ class _QuestionCardState extends State<QuestionCard> {
     {'option': 'D', 'text': 'option Four here', 'isSelected': false}
   ];
 
-  
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -197,8 +195,16 @@ class _QuestionCardState extends State<QuestionCard> {
                       child: InkWell(
                         onTap: () {
                           setState(() {
-                            options[index]['isSelected'] =
-                                !options[index]['isSelected'];
+                            // options[index]['isSelected'] =
+                            //     !options[index]['isSelected'];
+
+                            for (int i = 0; i < options.length; i++) {
+                              if (i == index) {
+                                options[i]['isSelected'] = true;
+                              } else {
+                                options[i]['isSelected'] = false;
+                              }
+                            }
                           });
                         },
                         child: Container(
@@ -220,8 +226,8 @@ class _QuestionCardState extends State<QuestionCard> {
                                   style: TextStyle(
                                       fontSize: 18,
                                       color: options[index]['isSelected']
-                                    ? Colors.white
-                                    : Colors.black,
+                                          ? Colors.white
+                                          : Colors.black,
                                       fontWeight: FontWeight.bold),
                                 ),
                                 SizedBox(
@@ -232,8 +238,8 @@ class _QuestionCardState extends State<QuestionCard> {
                                   style: TextStyle(
                                       fontSize: 17,
                                       color: options[index]['isSelected']
-                                    ? Colors.white
-                                    : Colors.black,
+                                          ? Colors.white
+                                          : Colors.black,
                                       fontWeight: FontWeight.bold),
                                 )
                               ]),

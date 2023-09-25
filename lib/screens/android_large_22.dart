@@ -387,7 +387,7 @@ class _AndroidLargeTwentyTwoState extends State<AndroidLargeTwentyTwo> {
                                 onTap: () {
                                   Navigator.of(context).push(MaterialPageRoute(
                                       builder: (BuildContext context) =>
-                                          HomePage()));
+                                          ResultScreen()));
                                 },
                                 child: Container(
                                     height: 30,

@@ -1,4 +1,5 @@
 import 'package:aie/components/donut_chart.dart';
+import 'package:aie/screens/android_large_19.dart';
 import 'package:aie/screens/android_large_22.dart';
 import 'package:flutter/material.dart';
 
@@ -126,12 +127,17 @@ class _AndroidLargeSevenState extends State<AndroidLargeSeven> {
                   ]),
                 child: Stack(
                   children: [
-                    const Padding(
-                      padding: EdgeInsets.only(top: 15, right: 15),
-                      child: Align(
-                          alignment: AlignmentDirectional(1, -1),
-                          child: Image(
-                              image: AssetImage('assets/images/arrow.png'))),
+                     Padding(
+                      padding: const EdgeInsets.only(top: 15, right: 15),
+                      child: InkWell(
+                        onTap: () {
+                          Navigator.of(context).push(MaterialPageRoute(builder: (context) => ResultScreen()));
+                        },
+                        child: const Align(
+                            alignment: AlignmentDirectional(1, -1),
+                            child: Image(
+                                image: AssetImage('assets/images/arrow.png'))),
+                      ),
                     ),
                     Padding(
                       padding: const EdgeInsets.only(top: 20, left: 20),

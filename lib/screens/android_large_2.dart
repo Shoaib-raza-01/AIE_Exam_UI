@@ -31,7 +31,7 @@ class _AndroidLargeTwoState extends State<AndroidLargeTwo> {
               ),
             ),
             SizedBox(
-              height: 280,
+              height: 300,
               width: MediaQuery.of(context).size.width,
               child: const Align(
                   alignment: Alignment.bottomRight,
@@ -49,553 +49,558 @@ class _AndroidLargeTwoState extends State<AndroidLargeTwo> {
             ),
             Padding(
               padding: const EdgeInsets.only(top: 250),
-              child: Flexible(
-                child: Container(
-                  decoration: const BoxDecoration(
-                    borderRadius: BorderRadius.only(
-                        topLeft: Radius.circular(40),
-                        topRight: Radius.circular(40)),
-                    color: Color.fromRGBO(73, 112, 251, 1),
-                  ),
-                  child: Padding(
-                    padding: const EdgeInsets.only(left: 30, top: 20),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Row(
-                          children: [
-                            const Text(
-                              '12th',
-                              style: TextStyle(
-                                  fontSize: 14,
-                                  // fontWeight: FontWeight.bold,
-                                  color: Colors.white,
-                                  fontFamily: 'Poppins'),
-                            ),
-                            Padding(
-                              padding:
-                                  const EdgeInsets.only(left: 20, right: 20),
-                              child: Container(
-                                height: 20,
+              child: Container(
+                height: MediaQuery.of(context).size.height - 250,
+                decoration: const BoxDecoration(
+                  borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(40),
+                      topRight: Radius.circular(40)),
+                  color: Color.fromRGBO(73, 112, 251, 1),
+                ),
+                child: Padding(
+                  padding: const EdgeInsets.only(left: 30, top: 20),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Row(
+                        children: [
+                          const Text(
+                            '12th',
+                            style: TextStyle(
+                                fontSize: 14,
+                                // fontWeight: FontWeight.bold,
                                 color: Colors.white,
-                                width: 1,
-                              ),
-                            ),
-                            const Text(
-                              'Mathematics',
-                              style: TextStyle(
-                                  fontSize: 14,
-                                  // fontWeight: FontWeight.bold,
-                                  color: Colors.white,
-                                  fontFamily: 'Poppins'),
-                            )
-                          ],
-                        ),
-                        const Text(
-                          'Trigonometry',
-                          style: TextStyle(
-                              fontSize: 34,
-                              fontWeight: FontWeight.bold,
+                                fontFamily: 'Poppins'),
+                          ),
+                          Padding(
+                            padding:
+                                const EdgeInsets.only(left: 20, right: 20),
+                            child: Container(
+                              height: 20,
                               color: Colors.white,
-                              fontFamily: 'Poppins'),
-                        ),
-                        Container(
-                          height: 1,
-                          color: Colors.white,
-                          width: 220,
-                        ),
-                        const SizedBox(
-                          height: 10,
-                        ),
-                        SizedBox(
-                          height: 360,
-                          child: DefaultTabController(
-                            length: 3,
-                            child: Column(
-                              children: <Widget>[
-                                ButtonsTabBar(
-                                    height: 50,
-                                    borderWidth: 1,
-                                    radius: 25,
-                                    contentPadding: const EdgeInsets.only(
-                                        left: 30, right: 30),
-                                    backgroundColor:
-                                        const Color.fromRGBO(255, 189, 20, 1),
-                                    unselectedBackgroundColor:
-                                        const Color.fromRGBO(73, 112, 251, 1),
-                                    unselectedLabelStyle:
-                                        const TextStyle(color: Colors.white),
-                                    labelStyle: const TextStyle(
-                                        color: Colors.white,
-                                        fontWeight: FontWeight.bold),
-                                    tabs: const [
-                                      Tab(
-                                        text: "Instructions",
-                                      ),
-                                      Tab(
-                                        text: "Learning",
-                                      ),
-                                      Tab(
-                                        text: 'Eligibility',
-                                      ),
-                                    ]),
-                                Flexible(
-                                  child: Padding(
-                                    padding: const EdgeInsets.only(right: 10),
-                                    child: TabBarView(
-                                      children: <Widget>[
-                                        Column(
-                                          children: [
-                                            const SizedBox(
-                                              height: 20,
-                                            ),
-                                            SizedBox(
-                                              width: MediaQuery.of(context)
-                                                  .size
-                                                  .width,
-                                              child: const Row(
-                                                children: [
-                                                  Icon(
-                                                    Icons.file_copy_rounded,
-                                                    color: Colors.white,
-                                                  ),
-                                                  Text(
-                                                    ' 90 Questions',
-                                                    style: TextStyle(
-                                                        color: Colors.white),
-                                                  ),
-                                                  SizedBox(
-                                                    width: 120,
-                                                  ),
-                                                  Icon(
-                                                    Icons.access_alarms_rounded,
-                                                    color: Colors.white,
-                                                  ),
-                                                  Text(
-                                                    '180 Minutes',
-                                                    style: TextStyle(
-                                                        fontSize: 14,
-                                                        fontWeight:
-                                                            FontWeight.bold,
-                                                        color: Colors.white,
-                                                        fontFamily: 'Poppins'),
-                                                  ),
-                                                ],
-                                              ),
-                                            ),
-                                            const SizedBox(
-                                              height: 20,
-                                            ),
-                                            Row(
-                                              crossAxisAlignment: CrossAxisAlignment.start,
-                                              children: [
-                                                Container(
-                                                  height: 10,
-                                                  width: 10,
-                                                  decoration: BoxDecoration(
-                                                      borderRadius:
-                                                          BorderRadius.circular(
-                                                              6),
-                                                      color: Colors.white),
-                                                ),
-                                                const SizedBox(
-                                                  width: 10,
-                                                ),
-                                                const Flexible(
-                                                    child: Text(
-                                                  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. ',
-                                                  style: TextStyle(
-                                                      color: Colors.white),
-                                                ))
-                                              ],
-                                            ),
-                                            const SizedBox(
-                                              height: 5,
-                                            ),
-                                            Row(
-                                              crossAxisAlignment: CrossAxisAlignment.start,
-                                              children: [
-                                                Container(
-                                                  height: 10,
-                                                  width: 10,
-                                                  decoration: BoxDecoration(
-                                                      borderRadius:
-                                                          BorderRadius.circular(
-                                                              6),
-                                                      color: Colors.white),
-                                                ),
-                                                const SizedBox(
-                                                  width: 10,
-                                                ),
-                                                const Flexible(
-                                                    child: Text(
-                                                  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. ',
-                                                  style: TextStyle(
-                                                      color: Colors.white),
-                                                ))
-                                              ],
-                                            ),
-                                            const SizedBox(
-                                              height: 5,
-                                            ),
-                                            Row(
-                                              crossAxisAlignment: CrossAxisAlignment.start,
-                                              children: [
-                                                Container(
-                                                  height: 10,
-                                                  width: 10,
-                                                  decoration: BoxDecoration(
-                                                      borderRadius:
-                                                          BorderRadius.circular(
-                                                              6),
-                                                      color: Colors.white),
-                                                ),
-                                                const SizedBox(
-                                                  width: 10,
-                                                ),
-                                                const Flexible(
-                                                    child: Text(
-                                                  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. ',
-                                                  style: TextStyle(
-                                                      color: Colors.white),
-                                                ))
-                                              ],
-                                            ),
-                                            const SizedBox(
-                                              height: 5,
-                                            ),
-                                            Row(
-                                              crossAxisAlignment: CrossAxisAlignment.start,
-                                              children: [
-                                                Container(
-                                                  height: 10,
-                                                  width: 10,
-                                                  decoration: BoxDecoration(
-                                                      borderRadius:
-                                                          BorderRadius.circular(
-                                                              6),
-                                                      color: Colors.white),
-                                                ),
-                                                const SizedBox(
-                                                  width: 10,
-                                                ),
-                                                const Flexible(
-                                                    child: Text(
-                                                  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. ',
-                                                  style: TextStyle(
-                                                      color: Colors.white),
-                                                ))
-                                              ],
-                                            ),
-                                            const SizedBox(
-                                              height: 5,
-                                            ),
-                                            Row(
-                                              crossAxisAlignment: CrossAxisAlignment.start,
-                                              children: [
-                                                Container(
-                                                  height: 10,
-                                                  width: 10,
-                                                  decoration: BoxDecoration(
-                                                      borderRadius:
-                                                          BorderRadius.circular(
-                                                              6),
-                                                      color: Colors.white),
-                                                ),
-                                                const SizedBox(
-                                                  width: 10,
-                                                ),
-                                                const Flexible(
-                                                    child: Text(
-                                                  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. ',
-                                                  style: TextStyle(
-                                                      color: Colors.white),
-                                                ))
-                                              ],
-                                            )
-                                          ],
-                                        ),
-                                        Column(
-                                          children: [
-                                            const SizedBox(
-                                              height: 25,
-                                            ),
-                                            RichText(
-                                              text: const TextSpan(
-                                                children: [
-                                                  TextSpan(
-                                                      text: 'Law :   ',
-                                                      style: TextStyle(
-                                                          color: Color.fromRGBO(
-                                                              255, 189, 20, 1),
-                                                          fontSize: 18,
-                                                          fontWeight:
-                                                              FontWeight.bold)),
-                                                  TextSpan(
-                                                      text:
-                                                          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam condimentum, nunc nec venenatis euismod,',
-                                                      style: TextStyle(
-                                                          color: Colors.white,
-                                                          fontSize: 16,
-                                                          fontWeight:
-                                                              FontWeight.bold)),
-                                                ],
-                                              ),
-                                            ),
-                                            const SizedBox(
-                                              height: 25,
-                                            ),
-                                            RichText(
-                                              text: const TextSpan(
-                                                children: [
-                                                  TextSpan(
-                                                      text: 'Law :   ',
-                                                      style: TextStyle(
-                                                          color: Color.fromRGBO(
-                                                              255, 189, 20, 1),
-                                                          fontSize: 18,
-                                                          fontWeight:
-                                                              FontWeight.bold)),
-                                                  TextSpan(
-                                                      text:
-                                                          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam condimentum, nunc nec venenatis euismod,',
-                                                      style: TextStyle(
-                                                          color: Colors.white,
-                                                          fontSize: 16,
-                                                          fontWeight:
-                                                              FontWeight.bold)),
-                                                ],
-                                              ),
-                                            ),
-                                            const SizedBox(
-                                              height: 25,
-                                            ),
-                                            RichText(
-                                              text: const TextSpan(
-                                                children: [
-                                                  TextSpan(
-                                                      text: 'Law :   ',
-                                                      style: TextStyle(
-                                                          color: Color.fromRGBO(
-                                                              255, 189, 20, 1),
-                                                          fontSize: 18,
-                                                          fontWeight:
-                                                              FontWeight.bold)),
-                                                  TextSpan(
-                                                      text:
-                                                          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam condimentum, nunc nec venenatis euismod,',
-                                                      style: TextStyle(
-                                                          color: Colors.white,
-                                                          fontSize: 16,
-                                                          fontWeight:
-                                                              FontWeight.bold)),
-                                                ],
-                                              ),
-                                            )
-                                          ],
-                                        ),
-                                        Column(
-                                          children: [
-                                            SizedBox(
-                                              height: 20,
-                                            ),
-                                            Row(
-                                              crossAxisAlignment: CrossAxisAlignment.start,
-                                              children: [
-                                                Container(
-                                                  height: 10,
-                                                  width: 10,
-                                                  decoration: BoxDecoration(
-                                                      borderRadius:
-                                                          BorderRadius.circular(
-                                                              6),
-                                                      color: Colors.white),
-                                                ),
-                                                const SizedBox(
-                                                  width: 10,
-                                                ),
-                                                const Flexible(
-                                                    child: Text(
-                                                  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. ',
-                                                  style: TextStyle(
-                                                      color: Colors.white),
-                                                ))
-                                              ],
-                                            ),
-                                            const SizedBox(
-                                              height: 5,
-                                            ),
-                                            Row(
-                                              crossAxisAlignment: CrossAxisAlignment.start,
-                                              children: [
-                                                Container(
-                                                  height: 10,
-                                                  width: 10,
-                                                  decoration: BoxDecoration(
-                                                      borderRadius:
-                                                          BorderRadius.circular(
-                                                              6),
-                                                      color: Colors.white),
-                                                ),
-                                                const SizedBox(
-                                                  width: 10,
-                                                ),
-                                                const Flexible(
-                                                    child: Text(
-                                                  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. ',
-                                                  style: TextStyle(
-                                                      color: Colors.white),
-                                                ))
-                                              ],
-                                            ),
-                                            const SizedBox(
-                                              height: 5,
-                                            ),
-                                            Row(
-                                              crossAxisAlignment: CrossAxisAlignment.start,
-                                              children: [
-                                                Container(
-                                                  height: 10,
-                                                  width: 10,
-                                                  decoration: BoxDecoration(
-                                                      borderRadius:
-                                                          BorderRadius.circular(
-                                                              6),
-                                                      color: Colors.white),
-                                                ),
-                                                const SizedBox(
-                                                  width: 10,
-                                                ),
-                                                const Flexible(
-                                                    child: Text(
-                                                  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. ',
-                                                  style: TextStyle(
-                                                      color: Colors.white),
-                                                ))
-                                              ],
-                                            ),
-                                            const SizedBox(
-                                              height: 5,
-                                            ),
-                                            Row(
-                                              crossAxisAlignment: CrossAxisAlignment.start,
-                                              children: [
-                                                Container(
-                                                  height: 10,
-                                                  width: 10,
-                                                  decoration: BoxDecoration(
-                                                      borderRadius:
-                                                          BorderRadius.circular(
-                                                              6),
-                                                      color: Colors.white),
-                                                ),
-                                                const SizedBox(
-                                                  width: 10,
-                                                ),
-                                                const Flexible(
-                                                    child: Text(
-                                                  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. ',
-                                                  style: TextStyle(
-                                                      color: Colors.white),
-                                                ))
-                                              ],
-                                            ),
-                                            const SizedBox(
-                                              height: 5,
-                                            ),
-                                            Row(
-                                              crossAxisAlignment: CrossAxisAlignment.start,
-                                              children: [
-                                                Container(
-                                                  height: 10,
-                                                  width: 10,
-                                                  decoration: BoxDecoration(
-                                                      borderRadius:
-                                                          BorderRadius.circular(
-                                                              6),
-                                                      color: Colors.white),
-                                                ),
-                                                const SizedBox(
-                                                  width: 10,
-                                                ),
-                                                const Flexible(
-                                                    child: Text(
-                                                  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. ',
-                                                  style: TextStyle(
-                                                      color: Colors.white),
-                                                ))
-                                              ],
-                                            ),
-                                            const SizedBox(
-                                              height: 5,
-                                            ),
-                                            Row(
-                                              crossAxisAlignment: CrossAxisAlignment.start,
-                                              children: [
-                                                Container(
-                                                  height: 10,
-                                                  width: 10,
-                                                  decoration: BoxDecoration(
-                                                      borderRadius:
-                                                          BorderRadius.circular(
-                                                              6),
-                                                      color: Colors.white),
-                                                ),
-                                                const SizedBox(
-                                                  width: 10,
-                                                ),
-                                                const Flexible(
-                                                    child: Text(
-                                                  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. ',
-                                                  style: TextStyle(
-                                                      color: Colors.white),
-                                                ))
-                                              ],
-                                            ),
-                                            const SizedBox(
-                                              height: 5,
-                                            ),
-                                          ],
-                                        )
-                                      ],
+                              width: 1,
+                            ),
+                          ),
+                          const Text(
+                            'Mathematics',
+                            style: TextStyle(
+                                fontSize: 14,
+                                // fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                                fontFamily: 'Poppins'),
+                          )
+                        ],
+                      ),
+                      const Text(
+                        'Trigonometry',
+                        style: TextStyle(
+                            fontSize: 34,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white,
+                            fontFamily: 'Poppins'),
+                      ),
+                      Container(
+                        height: 1,
+                        color: Colors.white,
+                        width: 220,
+                      ),
+                      const SizedBox(
+                        height: 10,
+                      ),
+                      SizedBox(
+                        height: 360,
+                        child: DefaultTabController(
+                          length: 3,
+                          child: Column(
+                            children: <Widget>[
+                              ButtonsTabBar(
+                                  height: 50,
+                                  borderWidth: 1,
+                                  radius: 25,
+                                  contentPadding: const EdgeInsets.only(
+                                      left: 30, right: 30),
+                                  backgroundColor:
+                                      const Color.fromRGBO(255, 189, 20, 1),
+                                  unselectedBackgroundColor:
+                                      const Color.fromRGBO(73, 112, 251, 1),
+                                  unselectedLabelStyle:
+                                      const TextStyle(color: Colors.white),
+                                  labelStyle: const TextStyle(
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.bold),
+                                  tabs: const [
+                                    Tab(
+                                      text: "Instructions",
                                     ),
+                                    Tab(
+                                      text: "Learning",
+                                    ),
+                                    Tab(
+                                      text: 'Eligibility',
+                                    ),
+                                  ]),
+                              Flexible(
+                                child: Padding(
+                                  padding: const EdgeInsets.only(right: 10),
+                                  child: TabBarView(
+                                    children: <Widget>[
+                                      Column(
+                                        children: [
+                                          const SizedBox(
+                                            height: 20,
+                                          ),
+                                          SizedBox(
+                                            width: MediaQuery.of(context)
+                                                .size
+                                                .width,
+                                            child: const Row(
+                                              children: [
+                                                // Icon(
+                                                //   Icons.file_copy_rounded,
+                                                //   color: Colors.white,
+                                                // ),
+                                                const Image(image: AssetImage('assets/images/ques_w_icon.png'),
+                                                  height: 24,),
+                                                Text(
+                                                  ' 90 Questions',
+                                                  style: TextStyle(
+                                                      color: Colors.white),
+                                                ),
+                                                SizedBox(
+                                                  width: 120,
+                                                ),
+                                                Icon(
+                                                  Icons.access_alarms_rounded,
+                                                  color: Colors.white,
+                                                ),
+                                                Text(
+                                                  '180 Minutes',
+                                                  style: TextStyle(
+                                                      fontSize: 14,
+                                                      fontWeight:
+                                                          FontWeight.bold,
+                                                      color: Colors.white,
+                                                      fontFamily: 'Poppins'),
+                                                ),
+                                              ],
+                                            ),
+                                          ),
+                                          const SizedBox(
+                                            height: 20,
+                                          ),
+                                          Row(
+                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                            children: [
+                                              Container(
+                                                height: 10,
+                                                width: 10,
+                                                decoration: BoxDecoration(
+                                                    borderRadius:
+                                                        BorderRadius.circular(
+                                                            6),
+                                                    color: Colors.white),
+                                              ),
+                                              const SizedBox(
+                                                width: 20,
+                                              ),
+                                              const Flexible(
+                                                  child: Text(
+                                                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. ',
+                                                style: TextStyle(
+                                                    color: Colors.white),
+                                              ))
+                                            ],
+                                          ),
+                                          const SizedBox(
+                                            height: 10,
+                                          ),
+                                          Row(
+                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                            children: [
+                                              Container(
+                                                height: 10,
+                                                width: 10,
+                                                decoration: BoxDecoration(
+                                                    borderRadius:
+                                                        BorderRadius.circular(
+                                                            6),
+                                                    color: Colors.white),
+                                              ),
+                                              const SizedBox(
+                                                width: 10,
+                                              ),
+                                              const Flexible(
+                                                  child: Text(
+                                                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. ',
+                                                style: TextStyle(
+                                                    color: Colors.white),
+                                              ))
+                                            ],
+                                          ),
+                                          const SizedBox(
+                                            height: 10,
+                                          ),
+                                          Row(
+                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                            children: [
+                                              Container(
+                                                height: 10,
+                                                width: 10,
+                                                decoration: BoxDecoration(
+                                                    borderRadius:
+                                                        BorderRadius.circular(
+                                                            6),
+                                                    color: Colors.white),
+                                              ),
+                                              const SizedBox(
+                                                width: 10,
+                                              ),
+                                              const Flexible(
+                                                  child: Text(
+                                                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. ',
+                                                style: TextStyle(
+                                                    color: Colors.white),
+                                              ))
+                                            ],
+                                          ),
+                                          const SizedBox(
+                                            height: 10,
+                                          ),
+                                          Row(
+                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                            children: [
+                                              Container(
+                                                height: 10,
+                                                width: 10,
+                                                decoration: BoxDecoration(
+                                                    borderRadius:
+                                                        BorderRadius.circular(
+                                                            6),
+                                                    color: Colors.white),
+                                              ),
+                                              const SizedBox(
+                                                width: 10,
+                                              ),
+                                              const Flexible(
+                                                  child: Text(
+                                                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. ',
+                                                style: TextStyle(
+                                                    color: Colors.white),
+                                              ))
+                                            ],
+                                          ),
+                                          const SizedBox(
+                                            height: 10,
+                                          ),
+                                          Row(
+                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                            children: [
+                                              Container(
+                                                height: 10,
+                                                width: 10,
+                                                decoration: BoxDecoration(
+                                                    borderRadius:
+                                                        BorderRadius.circular(
+                                                            6),
+                                                    color: Colors.white),
+                                              ),
+                                              const SizedBox(
+                                                width: 10,
+                                              ),
+                                              const Flexible(
+                                                  child: Text(
+                                                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. ',
+                                                style: TextStyle(
+                                                    color: Colors.white),
+                                              ))
+                                            ],
+                                          )
+                                        ],
+                                      ),
+                                      Column(
+                                        children: [
+                                          const SizedBox(
+                                            height: 25,
+                                          ),
+                                          RichText(
+                                            text: const TextSpan(
+                                              children: [
+                                                TextSpan(
+                                                    text: 'Law :   ',
+                                                    style: TextStyle(
+                                                        color: Color.fromRGBO(
+                                                            255, 189, 20, 1),
+                                                        fontSize: 18,
+                                                        fontWeight:
+                                                            FontWeight.bold)),
+                                                TextSpan(
+                                                    text:
+                                                        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam condimentum, nunc nec venenatis euismod,',
+                                                    style: TextStyle(
+                                                        color: Colors.white,
+                                                        fontSize: 16,
+                                                        fontWeight:
+                                                            FontWeight.bold)),
+                                              ],
+                                            ),
+                                          ),
+                                          const SizedBox(
+                                            height: 25,
+                                          ),
+                                          RichText(
+                                            text: const TextSpan(
+                                              children: [
+                                                TextSpan(
+                                                    text: 'Law :   ',
+                                                    style: TextStyle(
+                                                        color: Color.fromRGBO(
+                                                            255, 189, 20, 1),
+                                                        fontSize: 18,
+                                                        fontWeight:
+                                                            FontWeight.bold)),
+                                                TextSpan(
+                                                    text:
+                                                        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam condimentum, nunc nec venenatis euismod,',
+                                                    style: TextStyle(
+                                                        color: Colors.white,
+                                                        fontSize: 16,
+                                                        fontWeight:
+                                                            FontWeight.bold)),
+                                              ],
+                                            ),
+                                          ),
+                                          const SizedBox(
+                                            height: 25,
+                                          ),
+                                          RichText(
+                                            text: const TextSpan(
+                                              children: [
+                                                TextSpan(
+                                                    text: 'Law :   ',
+                                                    style: TextStyle(
+                                                        color: Color.fromRGBO(
+                                                            255, 189, 20, 1),
+                                                        fontSize: 18,
+                                                        fontWeight:
+                                                            FontWeight.bold)),
+                                                TextSpan(
+                                                    text:
+                                                        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam condimentum, nunc nec venenatis euismod,',
+                                                    style: TextStyle(
+                                                        color: Colors.white,
+                                                        fontSize: 16,
+                                                        fontWeight:
+                                                            FontWeight.bold)),
+                                              ],
+                                            ),
+                                          )
+                                        ],
+                                      ),
+                                      Column(
+                                        children: [
+                                          SizedBox(
+                                            height: 20,
+                                          ),
+                                          Row(
+                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                            children: [
+                                              Container(
+                                                height: 10,
+                                                width: 10,
+                                                decoration: BoxDecoration(
+                                                    borderRadius:
+                                                        BorderRadius.circular(
+                                                            6),
+                                                    color: Colors.white),
+                                              ),
+                                              const SizedBox(
+                                                width: 10,
+                                              ),
+                                              const Flexible(
+                                                  child: Text(
+                                                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. ',
+                                                style: TextStyle(
+                                                    color: Colors.white),
+                                              ))
+                                            ],
+                                          ),
+                                          const SizedBox(
+                                            height: 10,
+                                          ),
+                                          Row(
+                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                            children: [
+                                              Container(
+                                                height: 10,
+                                                width: 10,
+                                                decoration: BoxDecoration(
+                                                    borderRadius:
+                                                        BorderRadius.circular(
+                                                            6),
+                                                    color: Colors.white),
+                                              ),
+                                              const SizedBox(
+                                                width: 10,
+                                              ),
+                                              const Flexible(
+                                                  child: Text(
+                                                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. ',
+                                                style: TextStyle(
+                                                    color: Colors.white),
+                                              ))
+                                            ],
+                                          ),
+                                          const SizedBox(
+                                            height: 10,
+                                          ),
+                                          Row(
+                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                            children: [
+                                              Container(
+                                                height: 10,
+                                                width: 10,
+                                                decoration: BoxDecoration(
+                                                    borderRadius:
+                                                        BorderRadius.circular(
+                                                            6),
+                                                    color: Colors.white),
+                                              ),
+                                              const SizedBox(
+                                                width: 10,
+                                              ),
+                                              const Flexible(
+                                                  child: Text(
+                                                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. ',
+                                                style: TextStyle(
+                                                    color: Colors.white),
+                                              ))
+                                            ],
+                                          ),
+                                          const SizedBox(
+                                            height: 10,
+                                          ),
+                                          Row(
+                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                            children: [
+                                              Container(
+                                                height: 10,
+                                                width: 10,
+                                                decoration: BoxDecoration(
+                                                    borderRadius:
+                                                        BorderRadius.circular(
+                                                            6),
+                                                    color: Colors.white),
+                                              ),
+                                              const SizedBox(
+                                                width: 10,
+                                              ),
+                                              const Flexible(
+                                                  child: Text(
+                                                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. ',
+                                                style: TextStyle(
+                                                    color: Colors.white),
+                                              ))
+                                            ],
+                                          ),
+                                          const SizedBox(
+                                            height: 10,
+                                          ),
+                                          Row(
+                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                            children: [
+                                              Container(
+                                                height: 10,
+                                                width: 10,
+                                                decoration: BoxDecoration(
+                                                    borderRadius:
+                                                        BorderRadius.circular(
+                                                            6),
+                                                    color: Colors.white),
+                                              ),
+                                              const SizedBox(
+                                                width: 10,
+                                              ),
+                                              const Flexible(
+                                                  child: Text(
+                                                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. ',
+                                                style: TextStyle(
+                                                    color: Colors.white),
+                                              ))
+                                            ],
+                                          ),
+                                          const SizedBox(
+                                            height: 10,
+                                          ),
+                                          Row(
+                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                            children: [
+                                              Container(
+                                                height: 10,
+                                                width: 10,
+                                                decoration: BoxDecoration(
+                                                    borderRadius:
+                                                        BorderRadius.circular(
+                                                            6),
+                                                    color: Colors.white),
+                                              ),
+                                              const SizedBox(
+                                                width: 10,
+                                              ),
+                                              const Flexible(
+                                                  child: Text(
+                                                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. ',
+                                                style: TextStyle(
+                                                    color: Colors.white),
+                                              ))
+                                            ],
+                                          ),
+                                          const SizedBox(
+                                            height: 10,
+                                          ),
+                                        ],
+                                      )
+                                    ],
                                   ),
                                 ),
-                              ],
-                            ),
+                              ),
+                            ],
                           ),
                         ),
-                        Padding(
-                          padding: const EdgeInsets.only(bottom: 20),
-                          child: HorizontalSlidableButton(
-                            width: 330,
-                            height: 50,
-                            buttonWidth: 50.0,
-                            isRestart: true,
-                            color: const Color.fromRGBO(255, 255, 255, 1),
-                            buttonColor: const Color.fromRGBO(255, 189, 20, 1),
-                            dismissible: true,
-                            label: const Center(
-                                child: Icon(Icons.arrow_forward_ios_rounded,
-                                    color: Colors.white)),
-                            child: const Center(
-                              child: Padding(
-                                  padding: EdgeInsets.all(8.0),
-                                  child: Text('Slide to start exam')),
-                            ),
-                            onChanged: (position) {
-                              setState(() {
-                                if (position == SlidableButtonPosition.end) {
-                                  Navigator.of(context).push(MaterialPageRoute(
-                                      builder: (BuildContext context) =>
-                                          const AndroidLargeFive()));
-                                } else {}
-                              });
-                            },
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(bottom: 20),
+                        child: HorizontalSlidableButton(
+                          width: 330,
+                          height: 50,
+                          buttonWidth: 43.0,
+                          isRestart: true,
+                          border: Border.all(
+                            color: Colors.white,
+                            width: 4
                           ),
+                          color: const Color.fromRGBO(255, 255, 255, 1),
+                          buttonColor: const Color.fromRGBO(255, 189, 20, 1),
+                          dismissible: true,
+                          label: const Center(
+                              child: Icon(Icons.arrow_forward_ios_rounded,
+                                  color: Colors.white)),
+                          child: const Center(
+                            child: Padding(
+                                padding: EdgeInsets.all(8.0),
+                                child: Text('Slide to start exam')),
+                          ),
+                          onChanged: (position) {
+                            setState(() {
+                              if (position == SlidableButtonPosition.end) {
+                                Navigator.of(context).push(MaterialPageRoute(
+                                    builder: (BuildContext context) =>
+                                        const AndroidLargeFive()));
+                              } else {}
+                            });
+                          },
                         ),
-                      ],
-                    ),
+                      ),
+                    ],
                   ),
                 ),
               ),

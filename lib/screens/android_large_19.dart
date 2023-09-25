@@ -1,14 +1,15 @@
 import 'package:aie/components/bar_chart.dart';
+import 'package:aie/components/donut_chart.dart';
 import 'package:aie/screens/result_with_friends.dart';
 import 'package:flutter/material.dart';
 
 
-class HomePage extends StatefulWidget {
+class ResultScreen extends StatefulWidget {
   @override
-  _HomePageState createState() => _HomePageState();
+  _ResultScreenState createState() => _ResultScreenState();
 }
 
-class _HomePageState extends State<HomePage> {
+class _ResultScreenState extends State<ResultScreen> {
   String _selectedItem = 'Item 1';
   bool isExpanded = false;
 
@@ -157,21 +158,22 @@ class _HomePageState extends State<HomePage> {
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(40),
                             ),
-                            child: const Stack(children: [
-                              Image(
-                                  image:
-                                      AssetImage('assets/images/yellow.png')),
-                              Align(
-                                alignment: Alignment.center,
-                                child: Text(
-                                  '80%',
-                                  style: TextStyle(
-                                      color: Colors.black,
-                                      fontSize: 24,
-                                      fontWeight: FontWeight.bold),
-                                ),
-                              )
-                            ]),
+                            child:  DonutChartComponent(result: 80, primaryColor: const Color.fromRGBO(255, 189, 20, 1),textColor: Colors.black,),
+                            // child: const Stack(children: [
+                            //   Image(
+                            //       image:
+                            //           AssetImage('assets/images/yellow.png')),
+                            //   Align(
+                            //     alignment: Alignment.center,
+                            //     child: Text(
+                            //       '80%',
+                            //       style: TextStyle(
+                            //           color: Colors.black,
+                            //           fontSize: 24,
+                            //           fontWeight: FontWeight.bold),
+                            //     ),
+                            //   )
+                            // ]),
                           ),
                           const SizedBox(
                             height: 10,
@@ -206,20 +208,21 @@ class _HomePageState extends State<HomePage> {
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(40),
                           ),
-                          child: const Stack(children: [
-                            Image(
-                                image: AssetImage('assets/images/yellow.png')),
-                            Align(
-                              alignment: Alignment.center,
-                              child: Text(
-                                '80%',
-                                style: TextStyle(
-                                    color: Colors.black,
-                                    fontSize: 24,
-                                    fontWeight: FontWeight.bold),
-                              ),
-                            )
-                          ]),
+                          child:  DonutChartComponent(result: 80, primaryColor: const Color.fromRGBO(255, 189, 20, 1),textColor: Colors.black,),
+                          // child: const Stack(children: [
+                          //   Image(
+                          //       image: AssetImage('assets/images/yellow.png')),
+                          //   Align(
+                          //     alignment: Alignment.center,
+                          //     child: Text(
+                          //       '80%',
+                          //       style: TextStyle(
+                          //           color: Colors.black,
+                          //           fontSize: 24,
+                          //           fontWeight: FontWeight.bold),
+                          //     ),
+                          //   )
+                          // ]),
                         ),
                         const SizedBox(
                           height: 10,

@@ -14,28 +14,31 @@ class _ResultsWithFriendsState extends State<ResultsWithFriends> {
       StreamController<List>();
   var users = [
     {
-      "name": "You",
+      "name": " You ",
       "image": "assets/images/profile_pic.png",
       "rank": "8th",
       "points": "4 pt",
       "acrcy" : "80 %",
-      "timeE" : "80 %"
+      "timeE" : "80 %",
+      "performance" : "80%"
     },
     {
-      "name": "name",
+      "name": "Ayush",
       "image": 'assets/images/f1.png',
       "rank": "1st",
       "points": "12 pt",
       "acrcy" : "80%",
-      "timeE" : "80%"
+      "timeE" : "80%",
+      "performance" : "80%"
     },
     {
-      "name": "name",
+      "name": "Akash",
       "image": 'assets/images/f1.png',
       "rank": "2nd",
       "points": "12 pt",
       "acrcy" : "80%",
-      "timeE" : "80%"
+      "timeE" : "80%",
+      "performance" : "80%"
     },
     {
       "name": "name",
@@ -43,7 +46,8 @@ class _ResultsWithFriendsState extends State<ResultsWithFriends> {
       "rank": "3rd",
       "points": "10 pt",
       "acrcy" : "80%",
-      "timeE" : "80%"
+      "timeE" : "80%",
+      "performance" : "80%"
     },
     {
       "name": "name",
@@ -51,7 +55,8 @@ class _ResultsWithFriendsState extends State<ResultsWithFriends> {
       "rank": "4th",
       "points": "9 pt",
       "acrcy" : "80%",
-      "timeE" : "80%"
+      "timeE" : "80%",
+      "performance" : "80%"
     },
     {
       "name": "name",
@@ -59,7 +64,8 @@ class _ResultsWithFriendsState extends State<ResultsWithFriends> {
       "rank": "5th",
       "points": "9 pt",
       "acrcy" : "80%",
-      "timeE" : "80%"
+      "timeE" : "80%",
+      "performance" : "80%"
     },
     {
       "name": "name",
@@ -67,7 +73,8 @@ class _ResultsWithFriendsState extends State<ResultsWithFriends> {
       "rank": "6th",
       "acrcy" : "80%",
       "points": "7 pt",
-      "timeE" : "80%"
+      "timeE" : "80%",
+      "performance" : "80%"
     },
     {
       "name": "name",
@@ -75,7 +82,8 @@ class _ResultsWithFriendsState extends State<ResultsWithFriends> {
       "rank": "7th",
       "points": "6 pt",
       "acrcy" : "80%",
-      "timeE" : "80%"
+      "timeE" : "80%",
+      "performance" : "80%"
     },
     {
       "name": "name",
@@ -83,7 +91,8 @@ class _ResultsWithFriendsState extends State<ResultsWithFriends> {
       "rank": "9th",
       "points": "2 pt",
       "acrcy" : "80%",
-      "timeE" : "80%"
+      "timeE" : "80%",
+      "performance" : "80%"
     }
   ];
 
@@ -150,20 +159,18 @@ class _ResultsWithFriendsState extends State<ResultsWithFriends> {
                         child: const Text('Rank'),
                       ),
                       SizedBox(
-                        width: MediaQuery.of(context).size.width/2,
-                        child: const Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: [
-                      SizedBox(
-                        // width: MediaQuery.of(context).size.width/2,
-                        child: Text("Accuracy"),
+                      // width: MediaQuery.of(context).size.width/2,
+                      child: Text("Accuracy",style: TextStyle(fontSize: 12),),
                       ),
+                      SizedBox(width: 8,),
                       SizedBox(
-                        // width: MediaQuery.of(context).size.width/2,
-                        child: Text("Time Efficiency"),
-                      )
-                    ],
-                  ),
+                      // width: MediaQuery.of(context).size.width/2,
+                      child: Text("Time\nEfficiency",style: TextStyle(fontSize: 12),),
+                      ),
+                      SizedBox(width: 5,),
+                      SizedBox(
+                      // width: MediaQuery.of(context).size.width/2,
+                      child: Text("Performance",style: TextStyle(fontSize: 12),),
                       )
                     ],
                   ),
@@ -181,7 +188,7 @@ class _ResultsWithFriendsState extends State<ResultsWithFriends> {
                                     Row(
                             children: [
                               Padding(
-                                    padding: const EdgeInsets.only(left: 5, right: 20),
+                                    padding: const EdgeInsets.only(left: 5, right: 15),
                                     child: Text(d["rank"]!),
                               ),
                               Image(
@@ -190,23 +197,27 @@ class _ResultsWithFriendsState extends State<ResultsWithFriends> {
                                       fit: BoxFit.cover,
                                       image: AssetImage(d["image"]!)),
                               const SizedBox(
-                                    width: 20,
+                                    width: 15,
                               ),
                               Padding(
-                                    padding: const EdgeInsets.only(left: 15, right:50),
+                                    padding: const EdgeInsets.only(left: 20, right:30),
                                     child: Text(d["name"]!),
                               ),
                               const Padding(
-                                    padding: EdgeInsets.only( right:50),
+                                    padding: EdgeInsets.only( right:30),
                                     child: Text("80%",style: TextStyle(
                                         fontSize: 16,
-                                        color: Color.fromRGBO(255, 140, 0, 1)),
+                                        color: Color.fromRGBO(0, 0, 0, 1)),
                                     )),
                               const Text(
                                     "80%",
                                     style: TextStyle(
                                         fontSize: 16,
-                                        color: Color.fromRGBO(255, 140, 0, 1)),
+                                        color: Color.fromRGBO(0, 0, 0, 1)),
+                              ),
+                              Padding(
+                                    padding: const EdgeInsets.only(left: 20),
+                                    child: Text(d["performance"]!),
                               ),
                             ],
                           ),
@@ -222,7 +233,6 @@ class _ResultsWithFriendsState extends State<ResultsWithFriends> {
               
                     ),
                   ),
-                  const Divider(),
                 ],
               ),
             ),
