@@ -1,5 +1,6 @@
 import 'package:aie/components/donut_chart.dart';
 import 'package:aie/screens/android_large_19.dart';
+import 'package:aie/screens/result_with_friends.dart';
 import 'package:flutter/material.dart';
 
 class AndroidLargeTwentyTwo extends StatefulWidget {
@@ -38,11 +39,11 @@ class _AndroidLargeTwentyTwoState extends State<AndroidLargeTwentyTwo> {
                     color: const Color.fromRGBO(73, 112, 251, 1),
                     borderRadius: BorderRadius.circular(42),
                     boxShadow: const [
-                    BoxShadow(
-                      offset: Offset(1,2), 
-                                   blurRadius: 3,
-                    )
-                  ]),
+                      BoxShadow(
+                        offset: Offset(1, 2),
+                        blurRadius: 3,
+                      )
+                    ]),
                 child: Row(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -53,7 +54,11 @@ class _AndroidLargeTwentyTwoState extends State<AndroidLargeTwentyTwo> {
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(40),
                       ),
-                      child: DonutChartComponent(result: 80, primaryColor: Color.fromARGB(255, 34, 156, 255),textColor: Colors.white,),
+                      child: DonutChartComponent(
+                        result: 80,
+                        primaryColor: Color.fromARGB(255, 34, 156, 255),
+                        textColor: Colors.white,
+                      ),
                       // child: const Stack(children: [
                       //   Image(image: AssetImage('assets/images/circular.png')),
                       //   Align(
@@ -118,11 +123,11 @@ class _AndroidLargeTwentyTwoState extends State<AndroidLargeTwentyTwo> {
                     color: const Color.fromRGBO(255, 218, 133, 1),
                     borderRadius: BorderRadius.circular(25),
                     boxShadow: const [
-                    BoxShadow(
-                      offset: Offset(1,2), 
-                                   blurRadius: 3,
-                    )
-                  ]),
+                      BoxShadow(
+                        offset: Offset(1, 2),
+                        blurRadius: 3,
+                      )
+                    ]),
                 child: Stack(
                   children: [
                     const Padding(
@@ -148,7 +153,12 @@ class _AndroidLargeTwentyTwoState extends State<AndroidLargeTwentyTwo> {
                                   decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(40),
                                   ),
-                                  child: DonutChartComponent(result: 80, primaryColor: const Color.fromRGBO(255, 189, 20, 1),textColor: Colors.black,),
+                                  child: DonutChartComponent(
+                                    result: 80,
+                                    primaryColor:
+                                        const Color.fromRGBO(255, 189, 20, 1),
+                                    textColor: Colors.black,
+                                  ),
                                   // child: const Stack(children: [
                                   //   Image(
                                   //       image: AssetImage(
@@ -195,7 +205,12 @@ class _AndroidLargeTwentyTwoState extends State<AndroidLargeTwentyTwo> {
                                   decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(40),
                                   ),
-                                  child: DonutChartComponent(result: 80, primaryColor: const Color.fromRGBO(255, 189, 20, 1),textColor: Colors.black,),
+                                  child: DonutChartComponent(
+                                    result: 80,
+                                    primaryColor:
+                                        const Color.fromRGBO(255, 189, 20, 1),
+                                    textColor: Colors.black,
+                                  ),
                                   // child: const Stack(children: [
                                   //   Image(
                                   //       image: AssetImage(
@@ -241,26 +256,32 @@ class _AndroidLargeTwentyTwoState extends State<AndroidLargeTwentyTwo> {
               const SizedBox(
                 height: 30,
               ),
-              Container(
-                height: 50,
-                width: MediaQuery.of(context).size.width,
-                decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(30),
-                    color: const Color.fromRGBO(255, 218, 133, 1),
-                    boxShadow: const [
-                    BoxShadow(
-                      offset: Offset(1,2), 
-                                   blurRadius: 3,
-                    )
-                  ]),
-                child: const Center(
-                    child: Text(
-                  'Check Ranking',
-                  style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 18,
-                      fontWeight: FontWeight.bold),
-                )),
+              InkWell(
+                onTap: () {
+                  Navigator.of(context).push(MaterialPageRoute(
+                      builder: (context) => const ResultsWithFriends()));
+                },
+                child: Container(
+                  height: 50,
+                  width: MediaQuery.of(context).size.width,
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(30),
+                      color: const Color.fromRGBO(255, 218, 133, 1),
+                      boxShadow: const [
+                        BoxShadow(
+                          offset: Offset(1, 2),
+                          blurRadius: 3,
+                        )
+                      ]),
+                  child: const Center(
+                      child: Text(
+                    'Check Ranking',
+                    style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold),
+                  )),
+                ),
               ),
               const SizedBox(
                 height: 35,
@@ -269,11 +290,11 @@ class _AndroidLargeTwentyTwoState extends State<AndroidLargeTwentyTwo> {
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(34),
                     boxShadow: const [
-                    BoxShadow(
-                      offset: Offset(1,2), 
-                                   blurRadius: 3,
-                    )
-                  ]),
+                      BoxShadow(
+                        offset: Offset(1, 2),
+                        blurRadius: 3,
+                      )
+                    ]),
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(34),
                   child: ExpansionPanelList(
@@ -339,12 +360,12 @@ class _AndroidLargeTwentyTwoState extends State<AndroidLargeTwentyTwo> {
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(35),
                     color: const Color.fromRGBO(208, 177, 244, 1),
-                   boxShadow: const [
-                    BoxShadow(
-                      offset: Offset(1,2), 
-                                   blurRadius: 3,
-                    )
-                  ]),
+                    boxShadow: const [
+                      BoxShadow(
+                        offset: Offset(1, 2),
+                        blurRadius: 3,
+                      )
+                    ]),
                 child: Stack(
                   children: [
                     const Align(
